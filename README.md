@@ -78,12 +78,8 @@ df = df.astype(new_types)
 
 ## Motivation
 
-Its more often than not I use pandas to solve a quick Data Analysis problem and I know its not perfect but in many cases it
-gets the thing done. And this particular issue will also be faced in cases where someone infers the data while reading it and
-its inferred as float16. The workaround is suitable in only those conditions where you don't need to write float16 to a parquet file.
+Its more often than not I use pandas to solve a quick Data Analysis problem and I know its not perfect but in many cases it gets the thing done. And this particular issue will also be faced in cases where someone infers the data while reading it and its inferred as float16. The workaround is suitable in only those conditions where you don't need to write float16 to a parquet file.
 
 ## Conclusion
 
-The only reason I have did not look at fixing the issue in parquet or in pyarrow implementation is the complexity around
-touching the base implementation that will take to adding support for a new data type. Also as a work around exists
-I would rather live with it at a api consumption layer for now.
+The only reason I have did not look at fixing the issue in parquet or in pyarrow implementation is the complexity around touching the base implementation that will take to adding support for a new data type. Also as a work around exists I would rather live with it at a api consumption layer for now.
